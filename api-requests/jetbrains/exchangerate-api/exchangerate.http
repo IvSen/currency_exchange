@@ -1,0 +1,4 @@
+### https://www.exchangerate-api.com/docs/overview
+### get currency exchange rate
+GET {{domain}}/v6/{{token}}/latest/USD
+Content-Type: application/json

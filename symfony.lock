@@ -1,4 +1,13 @@
 {
+    "doctrine/annotations": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.10",
+            "ref": "64d8583af5ea57b7afa4aba4b159907f3a148b05"
+        }
+    },
     "doctrine/doctrine-bundle": {
         "version": "2.12",
         "recipe": {
@@ -38,21 +47,6 @@
             ".env.test",
             "phpunit.xml.dist",
             "tests/bootstrap.php"
-        ]
-    },
-    "symfony/asset-mapper": {
-        "version": "7.1",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "6.4",
-            "ref": "6c28c471640cc2c6e60812ebcb961c526ef8997f"
-        },
-        "files": [
-            "assets/app.js",
-            "assets/styles/app.css",
-            "config/packages/asset_mapper.yaml",
-            "importmap.php"
         ]
     },
     "symfony/console": {
@@ -222,19 +216,6 @@
             "assets/controllers/hello_controller.js"
         ]
     },
-    "symfony/translation": {
-        "version": "7.1",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "6.3",
-            "ref": "e28e27f53663cc34f0be2837aba18e3a1bef8e7b"
-        },
-        "files": [
-            "config/packages/translation.yaml",
-            "translations/.gitignore"
-        ]
-    },
     "symfony/twig-bundle": {
         "version": "7.1",
         "recipe": {
@@ -275,8 +256,5 @@
             "config/packages/web_profiler.yaml",
             "config/routes/web_profiler.yaml"
         ]
-    },
-    "twig/extra-bundle": {
-        "version": "v3.10.0"
     }
 }

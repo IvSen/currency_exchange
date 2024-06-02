@@ -1,0 +1,10 @@
+### get available currencies
+GET {{domain}}/api/get-available-currencies
+Content-Type: application/json
+
+### calculate exchange rate
+GET {{domain}}/api/currency-convert
+    ?fromCurrency={{fromCurrency}}
+    &toCurrency={{toCurrency}}
+    &amount={{amount}}
+Content-Type: application/json

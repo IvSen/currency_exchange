@@ -9,6 +9,15 @@ framework:
     #esi: true
     #fragments: true
 
+    http_client:
+      scoped_clients:
+        exchangerate.client:
+          base_uri: '%env(EXCHANGERATE_BASE_URI)%'
+          timeout: 60
+          retry_failed:
+            max_retries: 5
+            delay: 1000
+
 when@test:
     framework:
         test: true
